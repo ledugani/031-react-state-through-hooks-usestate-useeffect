@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function App({}) {
+export default function App() {
   const formDefaultValues = {
     email: "",
     fullName: ""
@@ -30,7 +30,7 @@ export default function App({}) {
           type="text"
           value={email}
           name={"email"}
-          onChange={handleChange()}
+          onChange={handleChange}
           placeholder="Your email"
         />
       </div>
@@ -40,7 +40,7 @@ export default function App({}) {
           type="text"
           value={fullName}
           name={"fullName"}
-          onChange={handleChange()}
+          onChange={handleChange}
           placeholder="Full name"
         />
       </div>
