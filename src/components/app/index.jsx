@@ -19,7 +19,7 @@ export default function App() {
     const target = e.target;
     setFormValues(prevState => ({
       ...prevState,
-      [target.name]: e.target.value
+      [target.name]: target.value
     }))
   }
 
